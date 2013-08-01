@@ -1,5 +1,6 @@
 Why f-Droid-Util ?
-  1.Some method not humane like 
+
+	1.Humanization Some java method like 
 		"system.out.println"|"Log.v"(replace by l.v(String only_one_param))
 	2.Simplify some common functions like
 		Loading_show(String title, String content)
