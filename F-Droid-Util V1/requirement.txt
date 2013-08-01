@@ -1,0 +1,24 @@
+DEADLINE : 
+	Finish : 
+		expected_date : 2013-08-03 
+		finish_date : 
+		if not make it : 
+		current_stage : 100%
+	Debug  
+		date : 2013-08-04 
+	Publish 
+		date : 2013-08-04
+		
+Version : 1.0
+
+howtouse.txt
+
+Careful : 
+	
+Explicit UI :
+	
+Exception : 
+
+Setting : 
+
+Menu : 
