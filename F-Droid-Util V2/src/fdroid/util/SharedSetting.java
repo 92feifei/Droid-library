@@ -3,8 +3,13 @@ package fdroid.util;
 import java.util.Map;
 import java.util.Set;
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.preference.PreferenceManager;
+
+//https://github.com/92feifei/Droid-library
 
 public class SharedSetting implements SharedPreferences,
 		SharedPreferences.Editor {
@@ -16,6 +21,7 @@ public class SharedSetting implements SharedPreferences,
 	public static boolean apply_when_editor_changed = false;
 	private static final SharedSetting sharedsetting = new SharedSetting();
 
+	@SuppressLint("CommitPrefEdits")
 	public static SharedSetting getInstance() {
 		settings = PreferenceManager
 				.getDefaultSharedPreferences(ActivityMethod.act_ctx);
@@ -162,5 +168,6 @@ public class SharedSetting implements SharedPreferences,
 		after_editor_changed();
 		return new_editor;
 	}
+
 
 }
