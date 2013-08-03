@@ -1,7 +1,7 @@
 # Why f-Droid-Util ? #
 
 	1.Humanization Some java method like 
-		"system.out.println"|"Log.v"(replace by l.v(String only_one_param))
+		system.out.println | Log.v
 	2.Simplify some common functions like
 		Loading_show(String title, String content)
 		Loading_hide()
