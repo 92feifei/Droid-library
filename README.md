@@ -1,4 +1,4 @@
-Why f-Droid-Util ?
+# Why f-Droid-Util ? #
 
 	1.Humanization Some java method like 
 		"system.out.println"|"Log.v"(replace by l.v(String only_one_param))
@@ -6,34 +6,39 @@ Why f-Droid-Util ?
 		Loading_show(String title, String content)
 		Loading_hide()
 
-How to use ?
 
-1.Right click project "f-Droid-Util" -> properties -> android -> check "is library"
-2.Right click your project 			 -> properties -> android -> add "f-Droid-Util"
+## How to use ? ##
+1. Right click project "f-Droid-Util" -> properties -> android -> check "is library"
+1. Right click your project 			 -> properties -> android -> add "f-Droid-Util"
 
-Example:
+## Example: ##
+
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.exampleactivity);
 	ActivityMethod af = ActivityMethod.getInstance(this, debug);// you must add this before using this util
 	LogUtil L = LogUtil.getInstance();
 	SharedSetting set = SharedSetting.getInstance();
 
-
-
-Method : 
+## Method :  ##
 	ActivityMethod : 
 		Loading_show(String title, String content); //show loading dialog
 		Loading_hide(); //hide loading dialog
 	LogUtil : 
-		v(String s);
+		v(String s); // 
 		v(Throwable tr);
 		v()
 		method v/d/e/i/w  do the same thing but different log level
 	SharedSetting : 
-		use it like 
-		SharedPreferences settings 
-		and
-		SharedPreferences.Editor editor
-		
-		
-Future : 
+		use it like SharedPreferences settings and SharedPreferences.Editor editor
+
+
+## LogUtil-screenshot ##
+		try {
+			@SuppressWarnings("unused")
+			JSONObject json = new JSONObject("worng message");
+		} catch (Throwable e) {
+			L.e("here's a json error");
+			L.e(e);
+		}
+![](https://lh3.googleusercontent.com/-JcTkiihw3qg/UfyCCcP70CI/AAAAAAAAAvA/Z1Xdb6CL7FY/w883-h219-no/kidsnapper1.jpg)
+
