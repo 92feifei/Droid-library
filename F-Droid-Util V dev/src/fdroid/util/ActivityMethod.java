@@ -1,5 +1,5 @@
 package fdroid.util;
-
+//https://github.com/92feifei/Droid-library
 import java.util.Date;
 
 import android.app.ProgressDialog;

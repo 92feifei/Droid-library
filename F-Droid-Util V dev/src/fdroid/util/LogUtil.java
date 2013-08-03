@@ -1,5 +1,5 @@
 package fdroid.util;
-
+//https://github.com/92feifei/Droid-library
 import android.util.Log;
 
 //Activity Function
